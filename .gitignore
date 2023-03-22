@@ -4,3 +4,5 @@
 .vscode/*
 *.json
 run_*.txt
+**/work_dir
+**/data

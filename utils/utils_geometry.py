@@ -155,7 +155,7 @@ def poly_area(x, y):
 
 
 def angles_from_rotation_matrix(rotation_matrix):
-    return R.from_dcm(rotation_matrix).as_euler('xyz', degrees=False)
+    return R.from_matrix(rotation_matrix).as_euler('xyz', degrees=False)
 
 
 def bbox_center(bbox):

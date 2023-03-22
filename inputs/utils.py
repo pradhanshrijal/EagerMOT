@@ -26,20 +26,20 @@ TRACKING_BEST = 'rrc_trackrcnn'
 MMDETECTION_CASCADE_NUIMAGES = 'mmdetection_cascade_nuimages'
 
 # Edit paths to point to where you store 3D and 2D detections / segmentations on your machine
-POINTGNN_DETS_DIR = MOUNT_PATH + "/storage/pointgnn/" + SPLIT
-DETECTIONS_AB3DMOT = MOUNT_PATH + "/storage/ab3dmot/" + SPLIT
-DETECTIONS_EFFICIENT_DET_NUSCENES = MOUNT_PATH + "/storage/efficientdet/" + SPLIT
-DETECTIONS_CENTER_POINT_NUSCENES = MOUNT_PATH + "/storage/centerpoint/" + SPLIT
+POINTGNN_DETS_DIR = MOUNT_PATH + "/work_dir/kitti_dir/detections/pointgnn/" + SPLIT
+DETECTIONS_AB3DMOT = MOUNT_PATH + "/work_dir/kitti_dir/detections/ab3dmot/" + SPLIT
+DETECTIONS_EFFICIENT_DET_NUSCENES = MOUNT_PATH + "/work_dir/nuscenes_dir/detections/efficientdet/" + SPLIT
+DETECTIONS_CENTER_POINT_NUSCENES = MOUNT_PATH + "/work_dir/nuscenes_dir/detections/centerpoint/" + SPLIT
 
-SEGMENTATIONS_TRACKRCNN_DIR = MOUNT_PATH + "/storage/trackrcnn/" + SPLIT
-MOTSFUSION_RRC_DIR = MOUNT_PATH + "/storage/detections_segmentations_RRC_BB2SegNet/" + SPLIT
-MOTSFUSION_TRACKRCNN_DIR = MOUNT_PATH + "/storage/detections_segmentations_trackrcnn_BB2SegNet/" + SPLIT
+SEGMENTATIONS_TRACKRCNN_DIR = MOUNT_PATH + "/work_dir/kitti_dir/detections/trackrcnn_detections/" # + SPLIT
+MOTSFUSION_RRC_DIR = MOUNT_PATH + "/work_dir/kitti_dir/detections/detections_segmentations_RRC_BB2SegNet_test" # + SPLIT
+MOTSFUSION_TRACKRCNN_DIR = MOUNT_PATH + "/work_dir/kitti_dir/detections/detections_segmentations_trackrcnn_BB2SegNet_test/" # + SPLIT
 DETECTIONS_MMDETECTION_CASCADE_NUIMAGES_NUSCENES = MOUNT_PATH + \
-    "/storage/mmdetection_cascade_x101/" + SPLIT
+    "/work_dir/nuscenes_dir/detections/mmdetection_cascade_x101/" + SPLIT
 DETECTIONS_MMDETECTION_CASCADE_NUIMAGES_KITTI = MOUNT_PATH + \
-    "/storage/mmdetection_cascade_x101_kitti/" + SPLIT
+    "/work_dir/kitti_dir/detections/mmdetection_cascade_x101/" + SPLIT
 
-########################################3333
+########################################
 
 _SPLITS_AB3DMOT = ['car_3d_det', 'ped_3d_det']
 DETECTIONS_MOTSFUSION_RRC_DIR = MOTSFUSION_RRC_DIR + "/detections"
@@ -47,7 +47,7 @@ SEGMENTATIONS_MOTSFUSION_RRC_DIR = MOTSFUSION_RRC_DIR + "/segmentations"
 DETECTIONS_MOTSFUSION_TRACKRCNN_DIR = MOTSFUSION_TRACKRCNN_DIR + "/detections_segmentations_trackrcnn"
 SEGMENTATIONS_MOTSFUSION_TRACKRCNN_DIR = MOTSFUSION_TRACKRCNN_DIR + "/segmentations_trackrcnn"
 
-DETECTIONS_3DOP_PATH = MOUNT_PATH + "/storage/3dop/" + SPLIT
+DETECTIONS_3DOP_PATH = MOUNT_PATH + "/work_dir/nuscenes_dir/detections/3dop/" + SPLIT
 
 
 def parse_and_add_seg_for_frame(frame, current_seg, classes_to_load, parse_func,
